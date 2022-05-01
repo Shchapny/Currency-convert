@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CurrencyDetailsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarConvert"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back"
+        tools:title="AUD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/background_item"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarConvert">
+
+        <TextView
+            android:id="@+id/name_currency"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_text_name"
+            android:layout_marginStart="@dimen/indent_left_details"
+            android:layout_marginTop="@dimen/indent_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_text_name"
+            android:textStyle="bold"
+            tools:text="Какая-то валюта" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_text_rate"
+            android:layout_marginStart="@dimen/indent_left_details"
+            android:layout_marginTop="@dimen/indent_text_rate"
+            android:text="@string/rate"
+            android:textSize="@dimen/size_text_title_rate" />
+
+        <TextView
+            android:id="@+id/text_value"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_text_value"
+            android:layout_marginStart="@dimen/indent_left_details"
+            android:layout_marginTop="@dimen/indent_text_value"
+            android:layout_marginBottom="@dimen/indent_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_text_value"
+            android:textStyle="bold"
+            tools:text="56.22 ₽" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/indent_bottom_cv"
+            app:cardCornerRadius="@dimen/radius_cv_details">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_count_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/indent_edtext"
+                    android:layout_marginTop="@dimen/indent_text"
+                    android:layout_marginEnd="@dimen/indent_edtext"
+                    android:textColorHint="@color/black600"
+                    app:boxStrokeColor="@color/accept"
+                    app:hintTextColor="@color/accept"
+                    tools:hint="AUD">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black900"
+                        android:textSize="@dimen/size_edtext" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/indent_edtext"
+                    android:layout_marginTop="@dimen/indent_text"
+                    android:layout_marginEnd="@dimen/indent_edtext"
+                    android:hint="@string/RUB"
+                    android:textColorHint="@color/black600"
+                    app:boxStrokeColor="@color/accept"
+                    app:hintTextColor="@color/accept">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_calculation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black900"
+                        android:textSize="@dimen/size_edtext" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

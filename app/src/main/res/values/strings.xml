@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">Currency convert</string>
+    <string name="currencies">Currencies</string>
+    <string name="date">Date</string>
+    <string name="rate">Rate</string>
+    <string name="RUB">RUB</string>
+    <string name="symbol">%1$.2f ₽</string>
+    <string name="warning">There is no data for the current day, choose another day</string>
+    <string name="select">Select</string>
+    <string name="select_date">Select date</string>
+</resources>

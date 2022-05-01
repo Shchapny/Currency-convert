@@ -1,0 +1,10 @@
+<resources>
+    <string name="currencies">Валюты</string>
+    <string name="date">Дата</string>
+    <string name="rate">Курс</string>
+    <string name="RUB">RUB</string>
+    <string name="symbol">%1$.2f ₽</string>
+    <string name="warning">На текущий день нет данных, выберите другой день</string>
+    <string name="select">Выбрать</string>
+    <string name="select_date">Выбор даты</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_toolbar">46dp</dimen>
+    <dimen name="height_text_name">28dp</dimen>
+    <dimen name="height_text_rate">24dp</dimen>
+    <dimen name="height_text_value">30dp</dimen>
+    <dimen name="height_cv_item">110dp</dimen>
+
+    <dimen name="indent_left_details">16dp</dimen>
+    <dimen name="indent_edtext">16dp</dimen>
+    <dimen name="indent_text_rate">6dp</dimen>
+    <dimen name="indent_text_value">4dp</dimen>
+    <dimen name="indent_text">20dp</dimen>
+    <dimen name="indent_bottom_cv">-24dp</dimen>
+    <dimen name="indent_left_list">32dp</dimen>
+    <dimen name="indent_divider">8dp</dimen>
+    <dimen name="indent_rcview">20dp</dimen>
+    <dimen name="indent_cv_item">8dp</dimen>
+    <dimen name="indent_title_toolbar">72dp</dimen>
+    <dimen name="indent_text_date">4dp</dimen>
+
+    <dimen name="radius_cv_details">24dp</dimen>
+    <dimen name="radius_cv_item">12dp</dimen>
+
+    <dimen name="size_text_title_date">12sp</dimen>
+    <dimen name="size_text_date">16sp</dimen>
+    <dimen name="size_text_name">18sp</dimen>
+    <dimen name="size_text_title_rate">15sp</dimen>
+    <dimen name="size_text_value">26sp</dimen>
+    <dimen name="size_edtext">16sp</dimen>
+    <dimen name="size_text_code_item">30sp</dimen>
+    <dimen name="size_text_value_item">20sp</dimen>
+
+    <dimen name="insert_divider">16dp</dimen>
+
+    <dimen name="width_cv_item">104dp</dimen>
+</resources>

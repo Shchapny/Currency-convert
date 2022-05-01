@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/currenciesFragment">
+    <fragment
+        android:id="@+id/currenciesFragment"
+        android:name="com.osinit.internship.ui.CurrenciesFragment"
+        android:label="fragment_currencies"
+        tools:layout="@layout/fragment_currencies" >
+        <action
+            android:id="@+id/action_currenciesFragment_to_currencyDetailsFragment"
+            app:destination="@id/currencyDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currencyDetailsFragment"
+        android:name="com.osinit.internship.ui.CurrencyDetailsFragment"
+        android:label="fragment_currency_details"
+        tools:layout="@layout/fragment_currency_details" >
+        <argument
+            android:name="detailsCurrency"
+            app:argType="com.osinit.internship.data.CurrencyInfo" />
+    </fragment>
+</navigation>
